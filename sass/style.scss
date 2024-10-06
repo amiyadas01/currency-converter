@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import "mixin";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -18,9 +19,7 @@ body {
 .container {
     width: 1250px;
     height: 570px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox;
     flex-direction: column;
     gap: 50px;
    
@@ -46,9 +45,7 @@ body {
     background:#bccc96;
     padding: 30px 60px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flexBox;
     flex-direction: column;
     gap: 30px;
     color: #372a2a;
@@ -56,24 +53,21 @@ body {
 
 }
 .amount{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flexBox;
     gap: 10px;
 }
 .drop-down{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox;
     gap: 10px;
 }
 .select_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flexBox;
     gap: 10px;
 img{
     width: 30px;
+    &:hover{
+        transform:scale(1.09,1.09);
+    }
 }
 }
  

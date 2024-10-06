@@ -78,6 +78,9 @@ body {
 .select_container img {
   width: 30px;
 }
+.select_container img:hover {
+  transform: scale(1.09, 1.09);
+}
 
 .btn {
   padding: 7px 10px;
